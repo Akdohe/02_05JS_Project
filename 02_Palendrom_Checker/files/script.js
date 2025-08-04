@@ -7,10 +7,17 @@ function reverseString(str){
 function check(){
     const value = input.value;
   //  alert(value) palendrom means same spealling when reverse the word or string 
-const reverse = reverseString(value)
-if(value === reverse){
-    alert ("P A L E N D R O M")
-}else{alert("Not Palendrom")}
+
+if(value === ""){
+    alert("value should not be blank")
+}else{
+    const reverse = reverseString(value)
+    if (value === reverse ){
+    alert ("P A L I N D R O M")
+    }
+    else{alert("Not Palendrom")}
+}
+
 // clearing the value from ip field
 input.value= ""
 
